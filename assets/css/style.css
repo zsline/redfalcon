@@ -64,6 +64,9 @@ h2{
     font-size: 40px;
     font-weight: 700;
 }
+h4{
+    font-family: 'Rockwell';
+}
 .container{
     max-width: 1350px;
     padding: 0 10px;
@@ -117,6 +120,7 @@ h2{
     transition: all 0.3s;
 }
 .redfalcon-wrapper__content {
+    position: relative;
     max-width: calc(100vw - 250px);
     width: 100%;
     margin-left: 250px;
@@ -124,6 +128,25 @@ h2{
 
 }
 
+.left-dec,
+.right-dec,
+.bottom-dec{
+    position: absolute;
+    z-index: -1;
+}
+.left-dec{
+    left: 0;
+    top: 10%;
+}
+.right-dec{
+    right: 0;
+    top: 40%;
+}
+.bottom-dec{
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 /* ============ Home ============*/
 .home{
@@ -203,6 +226,34 @@ h2{
     left: 50%;
     transform: translateX(-50%);
 }
+.about__info--item{
+    max-width: 883px;
+    margin-bottom: 86px;
+}
+.about__info--item>h2{
+    margin-bottom: 24px;
+}
+.about__info--item:nth-child(2n){
+    text-align: right;
+    margin-left: auto;
+}
+.about__family{
+    text-align: center;
+    margin-top: 73px;
+    margin-bottom: 160px;
+}
+.about__family h2{
+    margin-bottom: 24px;
+}
+.about__family p{
+    text-wrap:balance;
+}
+.about__quote{
+    text-align: center;
+}
+.about__quote h2{
+    padding: 0 40px;
+}
 .page-offer{
     margin-bottom: 112px;
 }
@@ -220,4 +271,14 @@ h2{
     height: 347px;
     width: 50%;
     flex: 0 0 auto;
+}
+
+
+.footer__cory{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 136px;
+    margin-bottom: 50px;
 }
