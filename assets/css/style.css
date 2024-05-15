@@ -1,5 +1,6 @@
 :root{
     --main-color :#0D0D0E;
+    /* --main-color :#000; */
     --accent:#EB3223;
     --button-color: #7A1619;
     --white:#fff;
@@ -64,8 +65,10 @@ h2{
     font-size: 40px;
     font-weight: 700;
 }
-h4{
-    font-family: 'Rockwell';
+h5{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 600;
 }
 .container{
     max-width: 1350px;
@@ -122,10 +125,27 @@ h4{
 .redfalcon-wrapper__content {
     position: relative;
     max-width: calc(100vw - 250px);
+    min-height: 100vh;
     width: 100%;
     margin-left: 250px;
     flex: 1 0;
-
+}
+.redfalcon-wrapper__content h1{
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-bottom: 50px;
+}
+.redfalcon-wrapper__content h1::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 230px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--button-color);
 }
 
 .left-dec,
@@ -133,19 +153,22 @@ h4{
 .bottom-dec{
     position: absolute;
     z-index: -1;
+
 }
 .left-dec{
-    left: 0;
+    left: -10%;
     top: 10%;
 }
 .right-dec{
-    right: 0;
-    top: 40%;
+    right: -3%;
+    top: 30%;
 }
 .bottom-dec{
     bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0.3;
+    z-index: -999;
 }
 
 /* ============ Home ============*/
@@ -203,7 +226,11 @@ h4{
     position: relative;
     font-size: 60px;
     text-transform: capitalize;
+    transform: translateY(40px);
     z-index: 1;
+}
+.about__title>h1::after{
+    display: none;
 }
 .about__welcome{
     text-align: center;
@@ -250,10 +277,50 @@ h4{
 }
 .about__quote{
     text-align: center;
+    margin-top: 270px;
 }
 .about__quote h2{
     padding: 0 40px;
 }
+
+/*============== Contact ==========*/
+
+.contact{
+    margin-top: 120px;
+}
+
+.contact + .dec{
+    display: none;
+}
+.contact__info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact__info--item {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact__info--item img{
+    display: block;
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    max-width: 58px;
+    margin-bottom: 32px;
+}
+.contact__info--item h5{
+    margin-bottom: 20px;
+}
+.contact__info--item p{
+    margin-bottom: 6px;
+}
+/*=============== Page ===============*/
+
 .page-offer{
     margin-bottom: 112px;
 }
@@ -273,7 +340,11 @@ h4{
     flex: 0 0 auto;
 }
 
+/*================ Footer ===============*/
 
+footer{
+    margin-top: 600px;
+}
 .footer__cory{
     text-align: center;
     font-family: 'Montserrat';
