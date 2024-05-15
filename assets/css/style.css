@@ -1,81 +1,90 @@
-:root{
-    --main-color :#0D0D0E;
+:root {
+    --main-color: #0D0D0E;
     /* --main-color :#000; */
-    --accent:#EB3223;
+    --accent: #EB3223;
     --button-color: #7A1619;
-    --white:#fff;
-    --bg-menu:#0B0B0B;
+    --white: #fff;
+    --bg-menu: #0B0B0B;
 }
 
 @font-face {
     font-family: "Montserrat";
     src:
-      url("../fonts/Montserrat-Regular.ttf") format("ttf"),
-      url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-      url("../fonts/Montserrat-Regular.woff") format("woff");
+        url("../fonts/Montserrat-Regular.ttf") format("ttf"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
     font-weight: 400;
-  }
-@font-face {
-    font-family: "Montserrat";
-    src:
-      url("../fonts/Montserrat-SemiBold.ttf") format("ttf"),
-      url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
-      url("../fonts/Montserrat-SemiBold.woff") format("woff");
-    font-weight: 600;
-  }
-@font-face {
-    font-family: "Montserrat";
-    src:
-      url("../fonts/Montserrat-Bold.ttf") format("ttf"),
-      url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-      url("../fonts/Montserrat-Bold.woff") format("woff");
-    font-weight: 700;
-  }
-@font-face {
-    font-family: "Rockwell";
-    src:
-      url("../fonts/RockwellStd.ttf") format("ttf"),
-      url("../fonts/RockwellStd.woff2") format("woff2"),
-      url("../fonts/RockwellStd.woff") format("woff");
-    font-weight: 400;
-  }
-@font-face {
-    font-family: "Rockwell";
-    src:
-      url("../fonts/RockwellStd-Bold.ttf") format("ttf"),
-      url("../fonts/RockwellStd-Bold.woff2") format("woff2"),
-      url("../fonts/RockwellStd-Bold.woff") format("woff");
-    font-weight: 700;
-  }
+}
 
-body{
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-SemiBold.ttf") format("ttf"),
+        url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src:
+        url("../fonts/Montserrat-Bold.ttf") format("ttf"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Rockwell";
+    src:
+        url("../fonts/RockwellStd.ttf") format("ttf"),
+        url("../fonts/RockwellStd.woff2") format("woff2"),
+        url("../fonts/RockwellStd.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Rockwell";
+    src:
+        url("../fonts/RockwellStd-Bold.ttf") format("ttf"),
+        url("../fonts/RockwellStd-Bold.woff2") format("woff2"),
+        url("../fonts/RockwellStd-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+body {
     background-color: var(--main-color);
     color: var(--white);
     font-family: 'Montserrat';
     font-size: 24px;
 }
-h1{
+
+h1 {
     font-family: 'Rockwell';
     font-weight: 700;
     font-size: 62px;
     text-transform: uppercase;
 }
-h2{
+
+h2 {
     font-family: 'Rockwell';
     font-size: 40px;
     font-weight: 700;
 }
-h5{
+
+h5 {
     font-family: 'Montserrat';
     font-size: 30px;
     font-weight: 600;
 }
-.container{
+
+.container {
     max-width: 1350px;
     padding: 0 10px;
     margin: 0 auto;
 }
-.main-btn{
+
+.main-btn {
     background-color: var(--button-color);
     padding: 18px 50px;
     border-radius: 50px;
@@ -84,20 +93,24 @@ h5{
     font-size: 24px;
     font-weight: 700;
 }
-.page-offer{
+
+.page-offer {
     width: 100%;
     display: flex;
     align-items: stretch;
     text-align: left;
     gap: 37px;
 }
-.main-btn:hover{
+
+.main-btn:hover {
     background-color: var(--accent);
 }
+
 .redfalcon-wrapper {
     display: flex;
     align-items: start;
 }
+
 .redfalcon-wrapper__menu {
     position: fixed;
     background-color: var(--bg-menu);
@@ -109,19 +122,24 @@ h5{
     font-size: 18px;
     text-transform: uppercase;
 }
-.redfalcon-wrapper__menu--nav{
+
+.redfalcon-wrapper__menu--nav {
     margin-top: 116px;
 }
-.redfalcon-wrapper__menu--nav li{
+
+.redfalcon-wrapper__menu--nav li {
     margin-bottom: 24px;
 }
-.redfalcon-wrapper__menu--nav li a{
+
+.redfalcon-wrapper__menu--nav li a {
     transition: all 0.3s;
 }
-.redfalcon-wrapper__menu--nav li a:hover{
+
+.redfalcon-wrapper__menu--nav li a:hover {
     color: var(--accent);
     transition: all 0.3s;
 }
+
 .redfalcon-wrapper__content {
     position: relative;
     max-width: calc(100vw - 250px);
@@ -131,15 +149,17 @@ h5{
     flex: 1 0;
     overflow: hidden;
 }
-.redfalcon-wrapper__content h1{
+
+.redfalcon-wrapper__content h1 {
     position: relative;
     font-size: 60px;
     text-align: center;
     padding-bottom: 34px;
     margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 86px;
 }
-.redfalcon-wrapper__content h1::after{
+
+.redfalcon-wrapper__content h1::after {
     position: absolute;
     content: '';
     height: 2px;
@@ -152,20 +172,23 @@ h5{
 
 .left-dec,
 .right-dec,
-.bottom-dec{
+.bottom-dec {
     position: absolute;
     z-index: -1;
 
 }
-.left-dec{
+
+.left-dec {
     left: -10%;
     top: 10%;
 }
-.right-dec{
+
+.right-dec {
     right: -3%;
     top: 30%;
 }
-.bottom-dec{
+
+.bottom-dec {
     bottom: 0;
     left: 0;
     right: 0;
@@ -174,7 +197,7 @@ h5{
 }
 
 /* ============ Home ============*/
-.home{
+.home {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -183,7 +206,8 @@ h5{
     align-items: center;
     text-align: center;
 }
-.home__bg{
+
+.home__bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -192,13 +216,15 @@ h5{
     object-fit: cover;
     z-index: -1;
 }
-.home__offer--types{
+
+.home__offer--types {
     font-size: 36px;
     font-family: 'Rockwwell';
     font-weight: 400;
     text-transform: uppercase;
 }
-.home__offer--title{
+
+.home__offer--title {
     max-width: 947px;
     margin: 61px 0;
 }
@@ -215,7 +241,8 @@ h5{
     justify-content: center;
     align-items: center;
 }
-.about__title::after{
+
+.about__title::after {
     content: '';
     position: absolute;
     top: 0;
@@ -224,28 +251,32 @@ h5{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.86);
 }
-.about__title>h1{
+
+.about__title>h1 {
     position: relative;
     font-size: 60px;
     text-transform: capitalize;
-    transform: translateY(40px);
     z-index: 1;
 }
-.about__title>h1::after{
+
+.about__title>h1::after {
     display: none;
 }
-.about__welcome{
+
+.about__welcome {
     text-align: center;
     width: 982px;
     margin: 0 auto 74px;
 }
-.about__welcome h2{
+
+.about__welcome h2 {
     position: relative;
     padding-bottom: 28px;
     margin-top: 69px;
     margin-bottom: 48px;
 }
-.about__welcome h2::after{
+
+.about__welcome h2::after {
     position: absolute;
     content: '';
     height: 2px;
@@ -255,64 +286,78 @@ h5{
     left: 50%;
     transform: translateX(-50%);
 }
-.about__info--item{
+
+.about__info--item {
     max-width: 883px;
     margin-bottom: 86px;
 }
-.about__info--item>h2{
+
+.about__info--item>h2 {
     margin-bottom: 24px;
 }
-.about__info--item:nth-child(2n){
+
+.about__info--item:nth-child(2n) {
     text-align: right;
     margin-left: auto;
 }
-.about__family{
+
+.about__family {
     text-align: center;
     margin-top: 73px;
     margin-bottom: 160px;
 }
-.about__family h2{
+
+.about__family h2 {
     margin-bottom: 24px;
 }
-.about__family p{
-    text-wrap:balance;
+
+.about__family p {
+    text-wrap: balance;
 }
-.about__quote{
+
+.about__quote {
     text-align: center;
     margin-top: 270px;
 }
-.about__quote h2{
+
+.about__quote h2 {
     padding: 0 40px;
 }
 
 /*=========Menu =========*/
 
-.menu ~ .right-dec{
- /* display: none; */
+.menu~.right-dec {
+    /* display: none; */
 }
-.menu__wrapper{
+
+.menu__wrapper {
     margin-top: 60px;
 }
-.menu__item{
+
+.menu__item {
     margin-bottom: 60px;
 }
-.menu__item--name{
+
+.menu__item--name {
     font-family: 'Rockwell';
     font-size: 60px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 100px;
 }
-.cards{
+
+.cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 16px;
     row-gap: 80px;
 }
-.card{
+
+.card {
     max-width: 500px;
 }
-.card__name{
+
+.card__name {
     font-family: 'Rockwell';
     font-size: 21px;
     font-weight: 400;
@@ -327,22 +372,111 @@ h5{
     margin-bottom: 18px;
     border-bottom: 2px dashed #7A1619;
 }
-.card__desc{
+
+.card__desc {
     font-size: 15px;
     line-height: 19px;
 }
 
+/*========== Gallery ================*/
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 86px;
+}
+
+/*============ Events ===============*/
+
+.events__title {
+    padding-top: 86px;
+    padding-bottom: 45px;
+}
+
+.events h1 {
+    padding: 0;
+    padding-bottom: 34px;
+    margin: 0;
+}
+
+.events__title--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 80px;
+}
+.events__btn{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+.event {
+    padding: 38px 56px;
+    background-color: #0D0D0E;
+    width: max-content;
+    max-width: 614px;
+}
+.event__title{
+    font-family: 'Rockwell';
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 140px;
+}
+.event__inner {
+}
+.event__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.event__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rockwell';
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--button-color);
+    width: 153px;
+}
+.event__data--num {
+}
+.event__data--month {
+}
+.event__info {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    flex: 1 0;
+}
+.event__info--name {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+}
+.event__info--time {
+    margin-top: 9px;
+}
+.calendar__title{
+    font-family: 'Rockwell';
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding: 120px 0 140px;
+}
 /*============== Contact ==========*/
 
 
-.contact + .dec{
+.contact+.dec {
     display: none;
 }
-.contact__info{
+
+.contact__info {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .contact__info--item {
     display: flex;
     width: 33%;
@@ -351,7 +485,7 @@ h5{
     text-align: center;
 }
 
-.contact__info--item img{
+.contact__info--item img {
     display: block;
     width: 100%;
     height: 80px;
@@ -359,28 +493,34 @@ h5{
     max-width: 58px;
     margin-bottom: 32px;
 }
-.contact__info--item h5{
+
+.contact__info--item h5 {
     margin-bottom: 20px;
 }
-.contact__info--item p{
+
+.contact__info--item p {
     margin-bottom: 6px;
 }
+
 /*=============== Page ===============*/
 
-.page-offer{
+.page-offer {
     margin-bottom: 112px;
 }
-.page-offer__info{
+
+.page-offer__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.page-offer__info>.main-btn{
+
+.page-offer__info>.main-btn {
     margin-top: auto;
     margin-bottom: 0;
     width: max-content;
 }
-.page-offer__img{
+
+.page-offer__img {
     height: 347px;
     width: 50%;
     flex: 0 0 auto;
@@ -388,11 +528,12 @@ h5{
 
 /*================ Footer ===============*/
 
-footer{
+footer {
     margin-top: 600px;
-    
+
 }
-.footer__cory{
+
+.footer__cory {
     text-align: center;
     font-family: 'Montserrat';
     font-size: 20px;
